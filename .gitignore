@@ -170,3 +170,6 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 config.py
+unsloth_compiled_cache/*
+.vscode/launch.json
+.vscode/tasks.json

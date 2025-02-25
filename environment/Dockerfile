@@ -18,7 +18,12 @@ RUN pip install --no-cache-dir \
     transformers \
     torch \
     sentencepiece \
-    unsloth
+    unsloth \
+    bitsandbytes \
+    unsloth_zoo \
+    wandb 
     
 # Also get the latest version Unsloth!
-RUN install --force-reinstall --no-cache-dir --no-deps git+https://github.com/unslothai/unsloth.git 
+RUN pip install --force-reinstall --no-cache-dir --no-deps git+https://github.com/unslothai/unsloth.git 
+
+RUN sudo apt-get install python3-pip
