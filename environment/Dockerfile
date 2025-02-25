@@ -17,4 +17,8 @@ RUN pip install --no-cache-dir \
     jupyterlab \
     transformers \
     torch \
-    sentencepiece
+    sentencepiece \
+    unsloth
+    
+# Also get the latest version Unsloth!
+RUN install --force-reinstall --no-cache-dir --no-deps git+https://github.com/unslothai/unsloth.git 
